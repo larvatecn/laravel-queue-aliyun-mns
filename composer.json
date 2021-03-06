@@ -1,0 +1,29 @@
+{
+  "name": "larva/laravel-queue-aliyun-mns",
+  "description": "This is a Laravel queue adapter for the Aliyun MNS.",
+  "keywords": [ "queue", "aliyun", "mns" ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "ext-json": "*",
+    "illuminate/support": "^5.0 || ^6.0 || ^7.0 || ^8.0",
+    "illuminate/queue": "^5.0 || ^6.0 || ^7.0 || ^8.0",
+    "larva/aliyun-mns": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larva\\Queue\\AliyunMNS\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Larva\\Queue\\AliyunMNS\\AliyunMNSServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
